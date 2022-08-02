@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <head>
+        <title> SURVEY FORM DESIGN </title>
+        <style>
+            body {
+                background-color: brown;
+                color: white;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h1 {
+                border: 30px solid goldenrod;
+                padding: 50px 10px 5px 30px;
+            }
+            p {
+                font-size: 20px;
+                text-align: center;
+                background-color:blueviolet;
+            }
+
+        </style>
+    </head>
+        
+    <body>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="About Us">About Us</a>
+            <a href="What We Do">What We Do</a>
+            <a href="Contact Us">Contact Us</a>
+            </nav>
+        <!--Heading content-->
+    <h1>Welcome to Nextgen form page</h1>
+        <h3>Basic form design using HTML</h3>
+
+        <!--Creating form content-->
+    <form>
+        <div style="border:  1px solid white; padding: 30px;">
+        <fieldset>
+            <legend>Personal details</legend>
+        <!--label input field-->
+         <p style="background-color: green; forn">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+         </p>
+
+         <p >
+             <label for="lastname">Last Name:</label>
+             <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+         </p> 
+         <!--label radio button-->
+         <p style="background-color: aqua;">
+            Gender:
+            <label><input type="radio" name="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+         </p>
+
+         <p>
+            <label>Date of Birth:<input type="date" name="birthdate" required></label>
+         </p>
+
+
+         <!--label and textarea-->
+         <p style="background-color: grey;">
+            <label>About Me:
+                    <textarea name="aboutme" rows="2" cols="30"></textarea></label>
+            </p>
+         <!--label pulldown list-->
+         <p style="background-color: orange;">
+         <br>
+         Select your state:
+         <select name="state">
+            <option value=>
+            <option value=AL>Alabama
+            <option value=AK>Alaska
+            <option value=AZ>Arizona
+            <option value=MN>Minnesota
+         </select></p>
+         <br>
+         <p>
+            <br>
+         Your department:
+         <select name="department"><option>
+            <option value=1 >Accounting 
+            <option value=2 >Administration
+             <option value=3 >Field Service  
+            <option value=4 >Marketing
+            </select></p>
+            <br>
+            <p style="background-color: peachpuff;">
+            <br>
+            Years of Service
+            <select name="service" ><option>
+                <option value=1 >0-2 years
+                <option value=2 >3-5 years
+                <option value=3 >6-8 years
+                <option value=4 >9 plus years
+        </select></p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact details</legend>        
+             <p>
+                <label>Address:
+                <textarea name="address" rows="2" cols="30"></textarea></label>
+             </p>
+
+             <p style="background-color: pink;">
+                <label for="phone"> Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </p>
+
+            <p >
+                <button type="submit" form="form1" value="submit">Submit</button>
+            <input type=submit value="<<previous">
+            <input type=submit value="save">
+            <input type=submit value="Cancel">
+            <input type=submit value="Reload">
+            <input type=submit value="Exit">
+            </p>
+
+        </fieldset>
+        </div>
+    </form>
+    </body>
+</html>
